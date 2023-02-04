@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () =>{
     return(
-        <div className="  col-span-1">
+        <div className=" md:col-span-1">
             <nav>
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <a className=" " href="/">FoodNinja</a>

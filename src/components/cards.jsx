@@ -45,7 +45,7 @@ const Cards = () =>{
                
             </div>
             <div className="flex justify-center">
-                <div className="bg-green-100 text-gray-400">Load More</div>
+                <div className="bg-green-100 text-gray-400 btnstyle">Load More</div>
                 
             </div>
            

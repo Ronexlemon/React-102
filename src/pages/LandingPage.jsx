@@ -5,7 +5,7 @@ import Cards from "../components/cards";
 import LoginSignUp from "../components/LoginSignup";
 const LandingPage =()=>{
     return(
-        <div className="px-16 py-6 col-span-2">
+        <div className="px-16 py-6 md:col-span-2">
             
                 
                

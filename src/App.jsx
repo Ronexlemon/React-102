@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="text-gray-600 font-serif bg-gray-100  grid grid-cols-3">
+    <div className="text-gray-600 font-serif bg-gray-100  grid md:grid-cols-3">
       <NavBar/>
       < LandingPage/>
     </div>
