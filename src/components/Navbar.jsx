@@ -1,13 +1,38 @@
-import React from "react";
+import React ,{useRef}from "react";
 
 const NavBar = () =>{
+    const burger = useRef(null);
+    const menu = useRef(null);
+    const menus =(event)=>{
+        
+        if(event.currentTarget.menu.classList.contains("hidden")){
+            
+            menu.classList.remove("hidden");
+        }else{
+            menu.classList.add("hidden");
+            
+        }
+    }
+    
     return(
         <div className=" md:col-span-1 md:flex md:justify-end">
             <nav className="text-right">
+                <div className="flex  justify-between items-center">
+
+               
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <a className=" hover:text-gray-800 " href="/">FoodNinja</a>
             </h1>
-            <ul className="text-xs">
+            <div onClick={
+                menus
+            } className="px-4 cursor-pointer md:hidden " ref={burger}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 ">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+                </div>
+                </div>
+            <ul className="text-xs hidden md:block " ref={menu}>
                 <li className="py-1">
                     <a href="#" className="px-4 flex justify-end border-r-4 border-orange-200"><span className="font-bold">Home</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 ml-2 ">
